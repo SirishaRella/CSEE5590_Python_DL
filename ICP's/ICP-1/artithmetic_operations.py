@@ -1,3 +1,4 @@
+#input of two numbers
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter Second number: "))
 operation = int(input("Enter 1 for addition\n"
@@ -6,6 +7,7 @@ operation = int(input("Enter 1 for addition\n"
                       "Enter 4 for division\n"))
 
 
+#Function to return the arithmetic operation value based on user's choice.
 def arithmetic(op):
     switcher = {
          1: "Addition of two numbers is: " + str(num1 + num2),
@@ -16,6 +18,7 @@ def arithmetic(op):
     print(switcher.get(op, "invalid operation\n"))
 
 
+#function call
 arithmetic(operation)
 
 
